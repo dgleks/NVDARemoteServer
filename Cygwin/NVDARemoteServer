@@ -1,2 +1,2 @@
 #!/bin/bash
-python /usr/share/NVDARemoteServer/server.py $*
+python3 /usr/share/NVDARemoteServer/server.py $*

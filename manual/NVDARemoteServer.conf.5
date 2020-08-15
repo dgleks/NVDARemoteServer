@@ -5,13 +5,13 @@
 NVDARemoteServer.conf \- Change NVDARemoteServer configuration
 .SH DESCRIPTION
 .P
-NVDARemoteServer.conf is the configuration file for NVDARemoteServer. On most Unix systems, it is located under /etc directory. This file has the following specifications:
+NVDARemoteServer.conf is the configuration file for NVDARemoteServer. On most Unix systems, it is located in the /etc directory. This file has the following specifications:
 .P
-Blank lines are allowed. The server will ignore them.
+Blank lines are permitted; The server will simply ignore them.
 .P
-Lines starting with a # character are comments, and the server ignore them. At the moment, a comment in the same line as a setting is not allowed.
+Lines starting with a number (#)  will be treated as comments, and the server will ignore them. At the moment, a comment in the same line as a setting is not allowed.
 .P
-Each setting goes in a line, and has the following format: option=value
+Each setting goes on its own line, and has the following format: option=value
 .P
 Spaces between option and value, before option and after value are not allowed. The server will fail and switch to default settings if it can't parse the configuration.
 .P
@@ -24,13 +24,13 @@ The following options are available. You can uncomment them in the file or add n
 .P
 interface
 .P
-Set the ip address of the interface where the server will listen for new incoming connections. By default it listens on all available interfaces (address 0.0.0.0). In some platforms, interface setting will not work if interface6 is not configured to bind to a specific address.
+Set the IPv4 address of the interface where the server will listen for new incoming connections. By default it listens on all available interfaces (0.0.0.0). On some platforms, the interface setting will not work correctly if interface6 is not configured to bind to a specific address.
 .P
 Example: interface=127.0.0.1
 .P
 interface6
 .P
-Set the IPV6 address of the interface where the server will listen for new incoming connections. By default it listens on all available interfaces (address ::).
+Set the IPv6 address of the interface where the server will listen for new incoming connections. By default it listens on all available interfaces (::).
 .P
 Example: interface6=::1
 .P
@@ -42,7 +42,7 @@ Example: port=6838
 .P
 port6
 .P
-Listen on the specified port, but only for IPV6. By default, use the value specified in port. Use this value if you want different ports for IPV4 and IPV6 sockets.
+Listen on the specified port, but only for IPv6. By default, use the value specified in port. Use this value if you want different ports for IPV4 and IPV6 sockets.
 .P
 Example: port6=6838
 .P

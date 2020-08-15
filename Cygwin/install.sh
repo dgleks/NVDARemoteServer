@@ -22,9 +22,9 @@ cp ../LICENSE /usr/share/doc/NVDARemoteServer
 cp ../NVDARemoteServer.conf /etc
 if test $? -eq 0
 then
-echo NVDA Remote Server has been installed succesfully.
+echo NVDA Remote Server has been installed successfully.
 exit 0
 else
-echo There was a problem installing NVDA Remote Server. Please, run the uninstall script and try again.
+echo There was a problem installing NVDA Remote Server. Please run the uninstall script and try again.
 exit 1
 fi

@@ -18,11 +18,11 @@ def get_data():
 build_exe_options={
   'optimize': 2,
   'include_msvcr': True,
-  'bin_excludes':['CRYPT32.dll'],
+  'bin_excludes': ['CRYPT32.dll'],
   'include_files': get_data(),
-  'includes':['win32timezone'],
-  'zip_include_packages':"*",
-  'zip_exclude_packages':[],
+  'includes': ['win32timezone'],
+  'zip_include_packages': "*",
+  'zip_exclude_packages': [],
 }
 
 if __name__ == '__main__':
